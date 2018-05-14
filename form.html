@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Meu form</title>
+    </head>
+    <body>
+        <h1>Meu form</h1>
+        <form action="form.php" method="post">
+            <div id="corpo-formulario">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>                
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+            </div>
+            <div>
+                <label for="telefone">
+                 Telefone:   
+                </label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite o seu telefone" required>                
+            </div>
+            <div>
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" placeholder="Digite o seu celular">
+            </div>
+            <div>
+                <label id="whatsapp">É whatsapp?
+                    <div id="escolha">
+                    Sim
+                    <input type="radio" name="escolha" value="Sim">
+                    Não
+                    <input type="radio" name="escolha" value="Não">
+                    </div>
+                </label>
+            </div>
+            <div>
+               <textarea name="mensagem" placeholder="Digite a sua mensagem" rows="6" cols="28"></textarea>
+            </div>
+            <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>
