@@ -5,7 +5,7 @@ $celular = $_POST['celular'];
 $escolha = $_POST['escolha'];
 $mensagem =$_POST['mensagem'];
 $formcontent="De: $name \n\n Mensagem: $mensagem \n\n Telefone: $telefone \n Celular: $celular \n Celular é Whatsapp? $escolha";
-$recipient= "ngaribaldif@gmail.com";
+$recipient= "teste@teste.com.br";
 $subject= "MENSAGEM DO FORMULÁRIO";
 $mailheader="From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Erro!");
